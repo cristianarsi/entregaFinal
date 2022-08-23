@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../imagenes/bg.webp);
+}
+
+main {
+  margin: 1em;
+}
+
+.banner {
+  background-image: url(../imagenes/fotohome.jpg);
+  background-size: cover;
+  padding: 70px;
+  height: 400px;
+  background-position: 0px;
+}
+
+#bannerText {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  color: black;
+  font-size: 3em;
+}
+
+.logo {
+  font-family: "Inspiration", cursive;
+  font-size: 3em;
+  color: black;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#menu {
+  background-color: #b6b823;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bUno logo bDos";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+#bUno {
+  grid-area: bUno;
+}
+
+#bDos {
+  grid-area: bDos;
+}
+#logo {
+  grid-area: logo;
+}
+.estiloBoton a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em;
+}
+
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  padding: 10px;
+}
+#map {
+  width: 50%;
+}
+
+.titulos {
+  padding: 1em;
+}
+
+#final {
+  width: 50%;
+}
+
+.imgVinos {
+  height: 20em;
+  width: 20em;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: goldenrod;
+  padding: 1em;
+  border-top: 1px solid black;
+  justify-content: space-evenly;
+  margin-top: 14em;
+}
+
+.footerImg {
+  width: 2em;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 500px) {
+  #menu {
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "logo logo"
+      "bUno bDos";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  main article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #map {
+    width: 100%;
+  }
+  main section {
+    padding: 1em;
+    min-width: 35vh;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
