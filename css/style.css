@@ -60,10 +60,19 @@ main {
 
 #bUno {
   grid-area: bUno;
+  height: 100px;
+  transition: 2s;
 }
-
+#bUno:hover {
+  height: 50px;
+}
 #bDos {
   grid-area: bDos;
+  height: 100px;
+  transition: 2s;
+}
+#bDos:hover {
+  height: 50px;
 }
 #logo {
   grid-area: logo;
