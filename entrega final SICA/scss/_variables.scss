@@ -1,0 +1,12 @@
+$colorEspecial: #b6b823;
+
+$ftw: 2em;
+
+$fuenteLogo: "Inspiration", cursive;
+
+$fuenteTexto: "Roboto", sans-serif;
+
+@mixin justify {
+  justify-content: center;
+  align-items: center;
+}

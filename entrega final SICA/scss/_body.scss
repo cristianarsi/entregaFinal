@@ -1,0 +1,53 @@
+body {
+  font-family: $fuenteTexto;
+  background-image: url(../imagenes/bg.webp);
+  main {
+    margin: 1em;
+  }
+  main article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section {
+    padding: 10px;
+  }
+  #map {
+    width: 50%;
+  }
+
+  .comprarVino {
+    border: none;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  #enologia {
+    width: 50%;
+    float: right;
+  }
+
+  #textoEnologia {
+    float: left;
+  }
+  .titulos {
+    padding: 1em;
+  }
+
+  #final {
+    @extend #map;
+  }
+
+  .imgVinos {
+    height: 20em;
+    width: 20em;
+  }
+
+  hr {
+    clear: both;
+  }
+}

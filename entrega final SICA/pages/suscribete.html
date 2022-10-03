@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content: "suscribete para recibir nuestras novedades">
+  <meta name="keywords" content="suscribete, suscripcion, tierra de vinos, novedades">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&display=swap" rel="stylesheet">
+  <title>Bodega Tierra de Vinos: Suscríbete</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+
+  <header>
+
+    <nav id="menu">
+      <div id="bUno" class="estiloBoton">
+        <a href="Enologia.html">Enología</a>
+        <a href="Nuestrosvinos.html">Nuestros Vinos</a>
+      </div>
+
+      <div id="logo">
+        <a class="enlaceLogo" href="../index.html">
+          <h1 class="logo">Tierra de vinos</h1>
+      </div>
+
+      <div id="bDos" class="estiloBoton">
+        <a href="suscribete.html">Suscribete</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <section>
+      <h2>Formulario de suscripción</h2>
+      <p>Suscríbete para recibir nuestras últimas novedades!</p>
+      <br>
+      <form>
+        <fieldset>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido">
+          <br>
+          <label for="nacionalidad">Nacionalidad:</label>
+          <input type="text" name="nacionalidad" id="nacionalidad">
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad">
+          <br>
+          <p>Género</p>
+          <select name="sexo" id="sexo">
+            <option value="">Elige una opción</option>
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+            <option value="nb">no binario</option>
+            <option value="t">Transgénero</option>
+            <option value="x">Prefiero no contestar</option>
+          </select>
+          <br>
+          <label for="fdNacimiento">Fecha de nacimiento:</label>
+          <input type="date" name="fdNacimiento" id="fdNacimiento">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" placeholder="mail@ejemplo.com" required>
+          <br>
+          <button>Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>De Cristian Sica para Coderhouse :D</p>
+    <a href="https://www.facebook.com/"><img src="../imagenes/face.png" alt="icono facebook" class="footerImg"></a>
+    <a href="https://twitter.com/?lang=es"><img src="../imagenes/twitter.png" alt="icono twitter" class="footerImg"></a>
+
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+#menu {
+  background-color: $colorEspecial;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bUno logo bDos";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
+  .logo {
+    font-family: $fuenteLogo;
+    font-size: 3em;
+    color: black;
+  }
+  .enlaceLogo {
+    text-decoration: none;
+  }
+  #bUno {
+    grid-area: bUno;
+    height: 50px;
+    transition: 2s;
+  }
+  #bUno:hover {
+    height: 10px;
+  }
+  #bDos {
+    grid-area: bDos;
+    height: 50px;
+    transition: 2s;
+  }
+  #bDos:hover {
+    height: 10px;
+  }
+  #logo {
+    grid-area: logo;
+  }
+
+  #logo:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+  .estiloBoton a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1em;
+  }
+}

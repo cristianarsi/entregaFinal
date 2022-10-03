@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../imagenes/fondo3.jpg);
+}
+* body main {
+  margin: 1em;
+}
+* body main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+* body main section {
+  padding: 10px;
+}
+* body #map,
+* body #final {
+  width: 50%;
+}
+* body .comprarVino {
+  border: none;
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+  margin: 5px;
+}
+* body #enologia {
+  width: 50%;
+  float: right;
+}
+* body #textoEnologia {
+  float: left;
+}
+* body .titulos {
+  padding: 1em;
+}
+* body .imgVinos {
+  height: 20em;
+  width: 20em;
+}
+* body hr {
+  clear: both;
+}
+
+.banner {
+  background-image: url(../imagenes/fotohome.jpg);
+  background-size: cover;
+  padding: 70px;
+  height: 400px;
+  background-position: 0px;
+}
+.banner #bannerText {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  color: black;
+  font-size: 3em;
+}
+
+#menu {
+  background-color: #b6b823;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bUno logo bDos";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+#menu .logo {
+  font-family: "Inspiration", cursive;
+  font-size: 3em;
+  color: black;
+}
+#menu .enlaceLogo {
+  text-decoration: none;
+}
+#menu #bUno {
+  grid-area: bUno;
+  height: 50px;
+  transition: 2s;
+}
+#menu #bUno:hover {
+  height: 10px;
+}
+#menu #bDos {
+  grid-area: bDos;
+  height: 50px;
+  transition: 2s;
+}
+#menu #bDos:hover {
+  height: 10px;
+}
+#menu #logo {
+  grid-area: logo;
+}
+#menu #logo:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+#menu .estiloBoton a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #b6b823;
+  padding: 1em;
+  border-top: 1px solid black;
+  justify-content: space-evenly;
+  margin-top: 14em;
+}
+footer .footerImg {
+  width: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+  #menu {
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-areas: "logo logo" "bUno bDos";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  main article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #map,
+  * body #final {
+    width: 100%;
+  }
+  main section {
+    padding: 1em;
+    min-width: 35vh;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+} /*# sourceMappingURL=style.css.map */

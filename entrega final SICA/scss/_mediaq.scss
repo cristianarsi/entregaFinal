@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 500px) {
+  #menu {
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "logo logo"
+      "bUno bDos";
+    @include justify;
+    align-content: center;
+    justify-items: center;
+  }
+  main article {
+    display: flex;
+    flex-wrap: wrap;
+    @include justify;
+  }
+  #map {
+    width: 100%;
+  }
+  main section {
+    padding: 1em;
+    min-width: 35vh;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
